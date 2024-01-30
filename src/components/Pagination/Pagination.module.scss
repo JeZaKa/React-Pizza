@@ -1,0 +1,53 @@
+.root {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 15px;
+  li {
+   
+    cursor: pointer;
+    
+    a {
+      padding: 10px;
+      border: 1px solid #fe5f1e;
+      border-radius: 30px;
+      width: 40px;
+      height: 40px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: all .2s ease-in-out;
+      &:hover {
+        background-color: #fe5d1ec1;
+        color: #f1f1f1;
+        a{
+          color: #f1f1f1;
+        }
+      }
+    }
+    
+  }
+  :global {
+    .previous {
+      border-radius: 30px;
+      transition: all .2s ease-in-out;
+      &:hover {
+        background-color: #fe5f1e;
+      }
+    }
+    .next {
+      border-radius: 30px;
+      transition: all .2s ease-in-out;
+      &:hover {
+        background-color: #fe5f1e;
+      }
+    }
+    .selected {
+      background-color: #fe5f1e;
+      border-radius: 30px;
+      a {
+        color: #f1f1f1;
+      }
+    }
+  }
+}
